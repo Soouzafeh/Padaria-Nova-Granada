@@ -206,50 +206,42 @@ body {
       height: 100vh;
       display: flex;
       flex-direction: column;
+      background: #f2ecd6
    }
    
    .header {
-      flex-direction: column;
+      flex-direction: row;
       display: flex;
       height: 130px;
-      margin-top: 25px;
+      padding-top: 15px;
+      width: 100%;
+      background-color: #4d322a;
+   }
+
+   .checkbtn {
+      display: block;
+      flex: 0%;
+      margin-top: 6vw;
+   }
+
+   .fas.fa-bars {
+      float: left;
+      margin-left: 20px;
+   }
+
+   .logo {
+      flex: 75%;
    }
    
    .logo img {
-      width: 250px;
+      width: 180px;
+      margin-left: 10px;
    }
    .search-button img {
      width: 4.392386530014641vw;
      height: 4.392386530014641vw;
   }
  
-  .search-box {
-     right:  0.8784773060029283vw;
-     margin-top: 6.5vw;
-     height: 6.588579795021962vw;
-     padding: 1.0980966325036603vw;
-     border-radius: 4.392386530014641vw;
-  }
- 
-  .search-txt {
-     padding: 0;
-     font-size: 2.0999999999999996vw;
-     line-height: 4.392386530014641vw; /*tamanho da linha*/
-     width: 0px;
-  }
- 
-  .search-button {
-     width: 6.588579795021962vw;
-     height: 6.588579795021962vw;
-     border-radius: 50%;
-     
-  }
- 
-  .search-box:hover > .search-txt {
-     width: 15vw;
-     padding: 0 0,6588579795021963vw;
-  }
-
   .container {
      display: flex;
      flex-direction: column;
@@ -316,16 +308,38 @@ body {
      padding-top: 5vw;
   }
 
-  .checkbtn {
-     display: block;
-     position: absolute;
-     margin-top: 6.4vw;
-     left:  0.8784773060029283vw;
-     margin-top: 6.5vw;
-     height: 6.588579795021962vw;
-     padding: 1.0980966325036603vw;
-     
-  }
+  .search-button img {
+   width: 4.392386530014641vw;
+   height: 4.392386530014641vw;
+}
+
+.search-box {
+   right:  0.8784773060029283vw;
+   margin-top: 5vw;
+   height: 6.588579795021962vw;
+   padding: 1.0980966325036603vw;
+   border-radius: 4.392386530014641vw;
+}
+
+.search-txt {
+   padding: 0;
+   font-size: 2.0999999999999996vw;
+   line-height: 4.392386530014641vw; /*tamanho da linha*/
+   width: 0px;
+}
+
+.search-button {
+   width: 6.588579795021962vw;
+   height: 6.588579795021962vw;
+   border-radius: 50%;
+   
+}
+
+.search-box:hover > .search-txt {
+   width: 15vw;
+   padding: 0 0,6588579795021963vw;
+}
+
 
   .menu {
      position: fixed;
