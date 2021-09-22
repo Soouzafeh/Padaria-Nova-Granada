@@ -13,7 +13,7 @@
   display: none;
 }
 
-html { 
+body { 
    background: url(/src/img/bg.png) no-repeat center center fixed; 
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -203,7 +203,7 @@ html {
 
 @media only screen and (max-width:600px) {
    body {
-      height: 90vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
    }
@@ -211,8 +211,8 @@ html {
    .header {
       flex-direction: column;
       display: flex;
-      height: 100px;
-      margin-top: 15px;
+      height: 130px;
+      margin-top: 25px;
    }
    
    .logo img {
@@ -263,6 +263,7 @@ html {
      flex-direction: column;
      background-color: #331f18ad;
      width: 100%;
+     height: calc(100%-130px);
      justify-content: center;
      align-items: center;
      position: relative;
@@ -317,9 +318,13 @@ html {
 
   .checkbtn {
      display: block;
-     margin-left: -15vw;
      position: absolute;
      margin-top: 6.4vw;
+     left:  0.8784773060029283vw;
+     margin-top: 6.5vw;
+     height: 6.588579795021962vw;
+     padding: 1.0980966325036603vw;
+     
   }
 
   .menu {
