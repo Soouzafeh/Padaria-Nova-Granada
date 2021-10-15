@@ -291,14 +291,14 @@ h3{
    font-family: 'Roboto', sans-serif;
 }
 
-.imagem_topico{
+.imagem_topico, .imagem_topico3{
    flex: 50%;
    box-sizing: border-box;
    height: 20vw;
    max-width: 100%;
 }
 
-.imagem_topico img {
+.imagem_topico img, .imagem_topico3 img {
    width: 100%;
    height: 100%;
 }
@@ -319,10 +319,52 @@ h3{
 }
 
 .dir_topicos {
-   background-color: deeppink;
-   flex:25%
+   background-color: #f3edda;
+   flex:25%;
+   flex-direction: column;
+   display: flex;
+   width: 100%;
 }
 
+.novidades, .novidades2 {
+   width: 95%;
+   border-top: 5px #462418 solid;
+   padding-top: 7px;
+   justify-content: center;
+   align-content: center;
+   display: flex;
+}
+
+.novidades2 {
+   border-bottom: 5px #462418 solid;
+   border-top: none;
+}
+
+.itens_novidade {
+   width: 95%;
+   height: 93%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+}
+
+.item_novidade, .item_novidade1, .item_novidade5 {
+   width: 20vw;
+   background-color: cornflowerblue;
+   height: 10vw;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.item_novidade5 {
+   margin-bottom: 0px;
+}
+
+.item_novidade img, .item_novidade5 img, .item_novidade1 img {
+   width: 100%;
+   height: 100%;
+}
 /*Configuração para tablet*/
 
 @media only screen and (max-width:900px){
@@ -347,30 +389,99 @@ h3{
      margin-top: 25px;
   }
 
-  .dir_peq_sobre {
-   margin-left: 50px;
-   background-color: rgb(0, 51, 255);
-   height: max-content;
+  .conteudo, .peq_sobre {
+     flex-direction: column;
+     justify-content: center;
+     justify-content: center;
+     text-align: center;
+  }
 
+  .dir_peq_sobre {
+   margin: 0;
+   padding-top: 20px;
+   height: max-content;
+  }
+
+  .esq_peq_sobre img {
+   width: 100%;
+  }
+
+  .topicos, .topico1, .topico2, .topico3 {
+     flex-direction: column;
+  }
+
+  .topico1, .topico2, .topico3 {
+     justify-content: center;
+     align-items: center;
+     width: 90vw;
+  }
+
+  .texto_topico1, .texto_topico2 {
+     margin: 0;
+     width: 80vw;
+  }
+
+  .texto_topico1 {
+     order: 2;
+  }
+
+  .imagem_topico{
+     flex: 50%;
+     box-sizing: border-box;
+     height: 1vw;
+     max-width: 100%;
+   }
+
+   .imagem_topico img {
+      width: 60vw;
+      height: 40vw;
+   }
+
+   .imagem_topico3 img {
+      width: 60vw;
+      height: 38vw;
+   }
+
+   .item_novidade1, .item_novidade, .item_novidade5{
+      width: 60vw;
+      height: 30vw;
+   }
+
+   .item_novidade1 {
+      margin-top: 40px;
+   }
+
+   .item_novidade5{
+      margin-bottom: 40px;
+   }
+
+   h3{
+      font-family: 'Berkshire Swash', cursive;
+      font-size: 7vw;
+      color: #643424;
+   }
 }
 
 /*Configuração para celular*/
 
 @media only screen and (max-width:600px) {
+  
    body {
       height: 100vh;
       display: flex;
       flex-direction: column;
-      background: #f2ecd6
+      background-color: #f3edda;
    }
    
    .header {
       flex-direction: row;
       display: flex;
-      height: 130px;
+      height: max-content;
       padding-top: 15px;
       width: 100%;
       background-color: #4d322a;
+      position: fixed;
+      z-index: 10;
    }
 
    .checkbtn {
@@ -385,17 +496,13 @@ h3{
    }
 
    .logo {
-      flex: 75%;
+      flex: 43%;
    }
    
    .logo img {
-      width: 180px;
-      margin-left: 10px;
+      width: 40vw;
+      padding-bottom: 20px;
    }
-   .search-button img {
-     width: 4.392386530014641vw;
-     height: 4.392386530014641vw;
-  }
  
   .container {
      display: flex;
@@ -403,6 +510,8 @@ h3{
      justify-content: center;
      align-items: center;
      margin: auto 0;
+     padding-top: 30vw;
+     background-color: #f3edda;
   }
 
   .mid {
@@ -410,11 +519,11 @@ h3{
      flex-direction: column;
      background-color: #331f18ad;
      width: 100%;
-     height: calc(100%-130px);
      justify-content: center;
      align-items: center;
      position: relative;
-     top: 0;
+     margin-top: -5vw;
+     padding-top: 20px;
   }
 
   .slogan {
@@ -491,8 +600,8 @@ h3{
 }
 
 .search-box:hover > .search-txt {
-   width: 15vw;
-   padding: 0 0,6588579795021963vw;
+   width: 0;
+   padding: 0;
 }
 
 
