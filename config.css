@@ -349,23 +349,73 @@ h3{
    align-content: center;
 }
 
-.item_novidade, .item_novidade1, .item_novidade5 {
+.item_novidade1, .item_novidade2, .item_novidade3, .item_novidade4, .item_novidade5 {
    width: 20vw;
    background-color: cornflowerblue;
    height: 10vw;
    margin-bottom: 40px;
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .item_novidade5 {
    margin-bottom: 0px;
 }
 
-.item_novidade img, .item_novidade5 img, .item_novidade1 img {
+.item_novidade1 img, .item_novidade2 img, .item_novidade3 img, .item_novidade4 img, .item_novidade5 img {
    width: 100%;
    height: 100%;
 }
-/*Configuração para tablet*/
+
+.itens_novidade img {
+   transition: 500ms;
+   border-radius: 5px;
+}
+
+.itens_novidade img:hover {
+   filter: blur(1.2px) brightness(.5);
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.item_novidade1:hover .texto_item1 {
+   opacity: 1;
+}
+
+.item_novidade2:hover .texto_item2 {
+   opacity: 1;
+}
+
+.item_novidade3:hover .texto_item3 {
+   opacity: 1;
+}
+
+.item_novidade4:hover .texto_item4 {
+   opacity: 1;
+}
+
+.item_novidade5:hover .texto_item5 {
+   opacity: 1;
+}
+
+.itens_novidade a {
+   text-decoration: none;
+}
+
+.texto_item1, .texto_item2, .texto_item5, .texto_item3, .texto_item4 {
+   position: absolute;
+   font-size: 20px;
+   color: #f3edda;
+   font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+   opacity: 0;
+   transition: 500ms;
+   pointer-events: none; /*desativa propriedade de ser manipulável com o mouse ou toque*/
+}
+
+/*Configuração para tablets maiores*/
 
 @media only screen and (max-width:900px){
 
@@ -442,7 +492,7 @@ h3{
       height: 38vw;
    }
 
-   .item_novidade1, .item_novidade, .item_novidade5{
+   .item_novidade1, .item_novidade2, .item_novidade3, .item_novidade4, .item_novidade5{
       width: 60vw;
       height: 30vw;
    }
@@ -462,10 +512,13 @@ h3{
    }
 }
 
-/*Configuração para celular*/
+/*Configuração para celular e tablets menores*/
 
-@media only screen and (max-width:600px) {
-  
+@media only screen and (max-width:650px) {
+   .topico2 h3 {
+      padding-top: 2vw;
+   }
+
    body {
       height: 100vh;
       display: flex;
@@ -636,6 +689,12 @@ h3{
   .op:hover {
      background-color: rgb(201, 161, 110);
   }
+}
+
+@media only screen and (max-width:610px) {
+   .topico2 h3 {
+      padding-top: 0;
+   }
 }
 
 @media only screen and (max-width:490px) {
