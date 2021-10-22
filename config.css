@@ -36,7 +36,7 @@ body {
    background-color: #f3edda;
 }
 
-/*Fundo incial contiso no header e no contéudo do container*/
+/*Fundo incial contido no header e no contéudo do container*/
 .first {
    background: url(src/img/bg.png); 
    width: 100%;
@@ -68,7 +68,7 @@ body {
    margin-top:  4.758418740849195vw;
 }
 
-.op {
+.op, .op1 {
    color: rgba(253,252,252,255);
    text-decoration: none;
    padding: 1.0980966325036603vw;
@@ -77,7 +77,7 @@ body {
    position: relative;
 }
 
-.op:after {
+.op:after, .op1:after {
    content: '';
    position: absolute;
    width: 0%;
@@ -87,6 +87,10 @@ body {
    left: 0;
    align-items: center;
    transition: 0.3s;
+}
+
+.op1:after {
+   width: 100%;
 }
 
 .op:hover::after {
@@ -145,6 +149,7 @@ body {
 }
 
 /*parte inicial após header*/
+
 .mid {
    display: flex;
    width: 100%;
@@ -595,7 +600,7 @@ footer .btn {
 
 @media only screen and (max-width:900px){
 
-  .search-txt, .op {
+  .search-txt, .op, .op1 {
      font-size: 1.6vw;
   }
 
@@ -603,11 +608,11 @@ footer .btn {
      margin-right: 32.5vw;
   }
 
-  .op {
+  .op, .op1 {
      padding: 4.5px;
   }
 
-  .op:after {
+  .op:after, .op1:after {
      bottom: 2px;
   }
 
@@ -871,7 +876,7 @@ footer .btn {
      z-index:1;
   }
 
-  .op {
+  .op, .op1 {
      display: block;
      font-size: 20px;
      margin-top: 4.716981132075472vh;
@@ -879,15 +884,19 @@ footer .btn {
      justify-content: center;
   }
 
+  .op1 {
+     background-color: rgb(201, 161, 110);
+  }
+
   #check:checked ~ .menu {
      left: 0;
   }
 
-  .op:after {
+  .op:after, .op1:after {
      height: 0px;
   }
 
-  .op:hover {
+  .op:hover, .op1:hover {
      background-color: rgb(201, 161, 110);
   }
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="config_contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+</head>
+<body>
+    <div class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="src/img/logo-branca.png" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a class="op" href="index.html">Início</a>
+            <a class="op" href="sobre.html">Sobre nós</a>
+            <a class="op" href="galeria.html">Galeria</a>
+            <a class="op" href="encomendas.html">Encomendas</a>
+            <a class="op" href="cardapio.html">Cardápio</a>
+            <a class="op5" href="contato.html">Contato</a>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar"> <!--Onde escreve na pesquisa-->
+            <a href="#" class="search-button">
+                <img src="/src/img/loupe-icon.svg" alt="Lupa de Pesquisa">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="contato">
+                <div class="opc1">
+                    <a href="tel:+551129570756"><i class="fas fa-phone-alt"></i></a>
+                    <span><a class="txt1">(11) 2957-0756</a></span>
+                </div>
+                <div class="opc2">
+                    <a href="https://api.whatsapp.com/send?phone=5511938061207&fbclid=IwAR1wUSbb_Qmjf-6l_tXvWzQ4-_MrSQDm6VObN9IKDzEBcx1Yt7as9bVZwMI"><i class="fab fa-whatsapp"></i></a>
+                    <span><a class="txt2">(11) 93806-1207</a></span>
+                </div>
+                <div class="opc3">
+                    <a href="mailto:ngranada@uol.com.br"><i class="far fa-envelope"></i></a>
+                    <span><a class="txt3">ngranada@uol.com.br</a></span>
+                </div>
+                <div class="opc4">
+                    <a href="https://www.google.com.br/maps/place/Padaria+Nova+Granada/@-23.5229035,-46.5161993,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce609f00c1bd8b:0x797694be1496d059!8m2!3d-23.5229748!4d-46.513995"><i class="fas fa-map-marker-alt"></i></a>
+                    <span><a class="txt4">Rua Itinguçú, 85<br>Penha de França - SP</a></span>
+                </div>
+            </div>
+            <div class="formulario">
+                <h1>Mande uma mensagem:</h1>
+                <form action="https://api.staticforms.xyz/submit" method="POST" autocomplete="off"> 
+                    <input type="hidden" name="accessKey" value="a6a88441-ce89-4ba7-a79e-21ecb6ac1834">
+                    <input type="hidden" name="redirectTo" value="http://padarianovagranada.atwebpages.com/contat">
+    
+                    <label for="nome" >Nome:</label>
+                    <input type="text" name="name" id="nome" required onclick="afastar()">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required onclick="afastar1()">
+                    <br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="message" id="mensagem" required onclick="afastar2()"></textarea>
+                    
+                    <input type="submit" value="Enviar" class="btn">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container_footer">
+            <div class="sn_footer">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma grande família que trabalhamos para servir a sua família. Nossa história começou em 1980 por um de nossos sócios, o qual o seu sonho era montar uma “Confeitaria”.</p><br><a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/panificadoranovagranada"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/padarianovagranada/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="links_rapidos_footer">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="novidade.html">Novidades</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="contatos_footer">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+551129570756"><i class="fas fa-phone-alt"></i>(11) 2957-0756</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5511938061207&fbclid=IwAR1wUSbb_Qmjf-6l_tXvWzQ4-_MrSQDm6VObN9IKDzEBcx1Yt7as9bVZwMI"><i class="fab fa-whatsapp"></i>(11) 93806-1207</a></li>
+                    <li><a href="mailto:ngranada@uol.com.br"><i class="far fa-envelope"></i>ngranada@uol.com.br</a></li>
+                    <li><a href="https://www.google.com.br/maps/place/Padaria+Nova+Granada/@-23.5229035,-46.5161993,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce609f00c1bd8b:0x797694be1496d059!8m2!3d-23.5229748!4d-46.513995"><i class="fas fa-map-marker-alt"></i>Rua Itinguçú, 85 - Penha de França</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright © 2021 - Todos os direitos reservados
+    </div>
+
+    <script>
+        function afastar() {
+            document.getElementById('nome').style.marginTop = '20px'
+            document.getElementById('nome').style.borderBottomColor = '#f3edda'
+        }
+        function afastar1() {
+            document.getElementById('email').style.marginTop = '20px'
+            document.getElementById('email').style.borderBottomColor = '#f3edda'
+        }
+        function afastar2() {
+            document.getElementById('mensagem').style.marginTop = '20px'
+            document.getElementById('mensagem').style.borderBottomColor = '#f3edda'
+        }
+    </script>
+</body>
+</html>
