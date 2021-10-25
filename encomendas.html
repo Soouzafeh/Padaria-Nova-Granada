@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/img/icoon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="config_encomendas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <div class="header" id="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="src/img/logo-branca.png" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a class="op" href="index.html">Início</a>
+            <a class="op" href="sobre.html">Sobre nós</a>
+            <a class="op" href="galeria.html">Galeria</a>
+            <a class="op4" href="encomendas.html">Encomendas</a>
+            <a class="op" href="cardapio.html">Cardápio</a>
+            <a class="op" href="contato.html">Contato</a>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar"> <!--Onde escreve na pesquisa-->
+            <a href="#" class="search-button">
+                <img src="/src/img/loupe-icon.svg" alt="Lupa de Pesquisa">
+            </a>
+        </div>
+    </div>
+    <!--div title era aqui-->
+    <div class="container">
+        <div class="centro"> <!--não tinha dic centro-->
+            <div class="title">
+                <h5>Encomendas</h5>
+                <p>O melhor da Nova Granada na sua casa</p>
+            </div>
+            <div class="botoes" id="botoes">
+                <a href="#menu_disp"><button type="button" class="cont_btn1">CARDÁPIO</button></a>
+                <a href=""><button type="button" class="cont_btn2">FAÇA SUA ENCOMENDA</button></a>
+            </div>
+        </div>
+        <h3 id="menu_disp">Menu  disponível para pedidos</h3>
+        <div class="options" id="options" style="flex-wrap: wrap;">
+            <a href="bolos.html" onclick="clarear1()"><div class="opt1" id="opt1" style="background-color: #24130d;"><p>Bolos</p></div></a>
+            <a href="doces.html" onclick="clarear2()"><div class="opt2" id="opt2"><p>Doces</p></div></a>
+            <a href="salgados.html" onclick="clarear3()"><div class="opt3" id="opt3"><p>Salgados</p></div></a>
+            <a href="pacotes.html" onclick="clarear4()"><div class="opt4" id="opt4"><p>Pacotes</p></div></a>
+            <a href="lanches.html" onclick="clarear5()"><div class="opt5" id="opt5"><p>Lanches</p></div></a>
+            <a href="cestas.htnl" onclick="clarear6()"><div class="opt6" id="opt6"><p>Cestas</p></div></a>
+            <a href="kits.html" onclick="clarear7()"><div class="opt7" id="opt7"><p>Kits</p></div></a>
+        </div>
+        <div id="conteudocentral">
+            <div class="conteudo">
+                <div class="conteudo1">
+                    <div class="item">
+                        <h1>Morango</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de chantilly com morango;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com morango</p>
+                    </div>
+                    <div class="item">
+                        <h1>Russo</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme russo e frutas;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com frutas</p>
+                    </div>
+                    <div class="item">
+                        <h1>Nozes</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme russo com nozes;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com nozes</p>
+                    </div>
+                    <div class="item">
+                        <h1>Mil folhas</h1>
+                        <p><span style="font-weight: bold;">Massa</span> folhada;
+                        <span style="font-weight: bold;">Recheio</span> de chantilly e creme russo;
+                        <span style="font-weight: bold;">Cobertura</span> de massa folhada com chantilly</p>
+                    </div>
+                    <div class="item">
+                        <h1>Floresta Negra</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de creme russo e cerejas;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com raspas de chocolate;
+                        <span style="font-weight: bold;">Opção de recheio</span> de morango</p>
+                    </div>
+                    <div class="item">
+                        <h1>Floresta Branca</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate branco;
+                        <span style="font-weight: bold;">Recheio</span> de creme russo e cerejas;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com raspas de chocolate branco;
+                        <span style="font-weight: bold;">Opção de recheio</span> de morango</p>
+                    </div>
+                    <div class="item">
+                        <h1>Prestígio</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de leite condensado com coco fresco;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com calda de chocolate</p>
+                    </div>
+                    <div class="item">
+                        <h1>Mousse</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de mousse de chocolate;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com calda de chocolate</p>
+                    </div>
+                    <div class="item">
+                        <h1>Chocolate</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de creme de chocolate trufado com pedaços de chocolate;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly, calda e raspas de chocolate</p>
+                    </div>
+                    <div class="item">
+                        <h1>Crocante</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de creme russo e crocante de caramelo com nozes;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly decorado com flocos</p>
+                    </div>
+                    <div class="item">
+                        <h1>Coco</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme de coco fresco;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly decorado com coco;
+                    </div>
+                    <div class="item">
+                        <h1>St. Honoré</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló e folhada;
+                        <span style="font-weight: bold;">Recheio</span> de chantilly e creme de baunilha;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly e carolinas recheadas com creme de baunilha</p>
+                    </div>
+                </div>
+                <div class="meio">
+                    
+                </div>
+                <div class="conteudo2">
+                    <div class="item">
+                        <h1>Trufado de Morango</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de creme de chocolate trufado com pedaços de morango;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly e calda de chocolate</p>
+                    </div>
+                    <div class="item">
+                        <h1>Brigadeiro</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de trufado de chocolate;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly. calda de chocolate e brigadeiro</p>
+                    </div>
+                    <div class="item">
+                        <h1>Bombom com Morango</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme de bombom com pedaços de morango;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly e morangos (ou abacaxi)</p>
+                    </div>
+                    <div class="item">
+                        <h1>Natas de Morango</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme de natas com pedaços de morango;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly, calda de chocolate branco e morangos</p>
+                    </div>
+                    <div class="item">
+                        <h1>Abacaxi com Coco</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> 1 - de creme de bombom e abacaxi, 2 - chantilly e creme de baunilha;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly e coco fresco;
+                    </div>
+                    <div class="item">
+                        <h1>Sonho de Valsa</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de creme de chocolate trufado com bombom sonho de valsa;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly com calda de chocolate e bombons;
+                    </div>
+                    <div class="item">
+                        <h1>Naked Cake</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme de bombom e geléia de frutas vermelhas;
+                        <span style="font-weight: bold;">Cobertura</span> de frutas vermelhas</p>
+                    </div>
+                    <div class="item">
+                        <h1>Tradição</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de creme de bomcom com abacaxi e pêssego em calda;
+                        <span style="font-weight: bold;">Cobertura</span> de chantilly e frutas</p>
+                    </div>
+                    <div class="item">
+                        <h1>Limão</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de mousse de limão;
+                        <span style="font-weight: bold;">Cobertura</span> de creme paris branco e raspa de limão</p>
+                    </div>
+                    <div class="item">
+                        <h1>Maracujá</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló de chocolate;
+                        <span style="font-weight: bold;">Recheio</span> de mousse de maracujá;
+                        <span style="font-weight: bold;">Cobertura</span> de creme paris branco e sementes de maracujá</p>
+                    </div>
+                    <div class="item">
+                        <h1>Bem Casado</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de doce d eleite artesanal</p>
+                    </div>
+                    <div class="item">
+                        <h1>Ninho</h1>
+                        <p><span style="font-weight: bold;">Massa</span> de pão de ló;
+                        <span style="font-weight: bold;">Recheio</span> de mousse de leite ninho;
+                        <span style="font-weight: bold;">Cobertura</span> de raspas de chocolate branco com ou sem morangos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container_footer">
+            <div class="sn_footer">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma grande família que trabalhamos para servir a sua família. Nossa história começou em 1980 por um de nossos sócios, o qual o seu sonho era montar uma “Confeitaria”.<br><a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a></p>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/panificadoranovagranada"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/padarianovagranada/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="links_rapidos_footer">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="novidade.html">Novidades</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="contatos_footer">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+551129570756"><i class="fas fa-phone-alt"></i>(11) 2957-0756</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5511938061207&fbclid=IwAR1wUSbb_Qmjf-6l_tXvWzQ4-_MrSQDm6VObN9IKDzEBcx1Yt7as9bVZwMI"><i class="fab fa-whatsapp"></i>(11) 93806-1207</a></li>
+                    <li><a href="mailto:ngranada@uol.com.br"><i class="far fa-envelope"></i>ngranada@uol.com.br</a></li>
+                    <li><a href="https://www.google.com.br/maps/place/Padaria+Nova+Granada/@-23.5229035,-46.5161993,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce609f00c1bd8b:0x797694be1496d059!8m2!3d-23.5229748!4d-46.513995"><i class="fas fa-map-marker-alt"></i>Rua Itinguçú, 85 - Penha de França</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright © 2021 - Todos os direitos reservados</p>
+    </div>
+    <script>
+        function clarear1() {
+            document.getElementById('opt1').style.backgroundColor = '#24130d'
+            document.getElementById('opt2').style.backgroundColor = '#4d322a'
+            document.getElementById('opt3').style.backgroundColor = '#4d322a'
+            document.getElementById('opt4').style.backgroundColor = '#4d322a'
+            document.getElementById('opt5').style.backgroundColor = '#4d322a'
+            document.getElementById('opt6').style.backgroundColor = '#4d322a'
+            document.getElementById('opt7').style.backgroundColor = '#4d322a'
+        }
+
+        function clarear2() {
+            document.getElementById('opt2').style.backgroundColor = '#24130d'
+            document.getElementById('opt1').style.backgroundColor = '#4d322a'
+            document.getElementById('opt3').style.backgroundColor = '#4d322a'
+            document.getElementById('opt4').style.backgroundColor = '#4d322a'
+            document.getElementById('opt5').style.backgroundColor = '#4d322a'
+            document.getElementById('opt6').style.backgroundColor = '#4d322a'
+            document.getElementById('opt7').style.backgroundColor = '#4d322a'
+        }
+
+        function clarear3() {
+            document.getElementById('opt3').style.backgroundColor = '#24130d'
+            document.getElementById('opt2').style.backgroundColor = '#4d322a'
+            document.getElementById('opt1').style.backgroundColor = '#4d322a'
+            document.getElementById('opt4').style.backgroundColor = '#4d322a'
+            document.getElementById('opt5').style.backgroundColor = '#4d322a'
+            document.getElementById('opt6').style.backgroundColor = '#4d322a'
+            document.getElementById('opt7').style.backgroundColor = '#4d322a'
+        }
+
+        function clarear4() {
+            document.getElementById('opt4').style.backgroundColor = '#24130d'
+            document.getElementById('opt2').style.backgroundColor = '#4d322a'
+            document.getElementById('opt3').style.backgroundColor = '#4d322a'
+            document.getElementById('opt1').style.backgroundColor = '#4d322a'
+            document.getElementById('opt5').style.backgroundColor = '#4d322a'
+            document.getElementById('opt6').style.backgroundColor = '#4d322a'
+            document.getElementById('opt7').style.backgroundColor = '#4d322a'
+        }
+
+        function clarear5() {
+            document.getElementById('opt5').style.backgroundColor = '#24130d'
+            document.getElementById('opt2').style.backgroundColor = '#4d322a'
+            document.getElementById('opt3').style.backgroundColor = '#4d322a'
+            document.getElementById('opt4').style.backgroundColor = '#4d322a'
+            document.getElementById('opt1').style.backgroundColor = '#4d322a'
+            document.getElementById('opt6').style.backgroundColor = '#4d322a'
+            document.getElementById('opt7').style.backgroundColor = '#4d322a'
+        }
+
+        function clarear6() {
+            document.getElementById('opt6').style.backgroundColor = '#24130d'
+            document.getElementById('opt2').style.backgroundColor = '#4d322a'
+            document.getElementById('opt3').style.backgroundColor = '#4d322a'
+            document.getElementById('opt4').style.backgroundColor = '#4d322a'
+            document.getElementById('opt5').style.backgroundColor = '#4d322a'
+            document.getElementById('opt1').style.backgroundColor = '#4d322a'
+            document.getElementById('opt7').style.backgroundColor = '#4d322a'
+        }
+
+        function clarear7() {
+            document.getElementById('opt7').style.backgroundColor = '#24130d'
+            document.getElementById('opt2').style.backgroundColor = '#4d322a'
+            document.getElementById('opt3').style.backgroundColor = '#4d322a'
+            document.getElementById('opt4').style.backgroundColor = '#4d322a'
+            document.getElementById('opt5').style.backgroundColor = '#4d322a'
+            document.getElementById('opt6').style.backgroundColor = '#4d322a'
+            document.getElementById('opt1').style.backgroundColor = '#4d322a'
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#options a").click(function(e) {
+                e.preventDefault();
+                var href = $( this ).attr('href');
+                $("#conteudocentral").load(href + "#conteudocentral");
+            });
+        });
+    </script>
+    <script> //Sript para redirecionar para link interno com animação
+        $('#botoes a').click(function(e){ //Quando clicar no elemento com id gotomenu_disp
+            e.preventDefault //Vai prevenir que oq aql id faz por padrão
+            var id = $(this).attr('href'), //o this é para pegar elemnto exato que clicar e o attr vai ser para pegar o href do elemento que eu clicar
+                targetOffset = $(id).offset().top, //leva tal coisa ao topo
+                menuheight = $('#header').innerHeight(); //pega altura do menu
+            $('html, body').animate({ //animação
+                scrollTop: targetOffset - menuheight - 20 //desconto do header e o 20 ´w pra não ficar tão grudado
+            }, 500); //velocidade de 500
+        });
+    </script>
+</body>
+</html>
