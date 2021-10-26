@@ -235,7 +235,6 @@ h3 {
 .options {
     display: flex;
     width: 100%;
-    width: max-content;
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
@@ -249,11 +248,15 @@ h3 {
     align-items: center;
     display: flex;
     width: 10vw;
+    min-width: 85px;
     border-right: 0.5px solid #f3edda;
     border-left: 0.5px solid #f3edda;
 }
 
 .options a{
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
     text-decoration: none;
     color: #f3edda;
     font-family: 'Poppins', sans-serif;
@@ -267,34 +270,27 @@ h3 {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 80%;
+   width: 100%;
    height: max-content;
 }
 
 #conteudocentral .conteudo {
-   margin-top: 20px;
    display: flex;
    flex-direction: row;
-   width: 100%;
+   width: 80%;
    margin-bottom: 20px;
 }
 
-#conteudocentral .conteudo .conteudo1{
+#conteudocentral .conteudo .conteudo1, #conteudocentral .conteudo .conteudo2{
    display: flex;
    flex-direction: column;
    flex: 1;
    height: max-content;
+   margin-left: 0;
 }
 
 .meio {
    flex: 0.1;
-}
-
-#conteudocentral .conteudo .conteudo2{
-   display: flex;
-   flex-direction: column;
-   flex: 1;
-   height: max-content;
 }
 
 #conteudocentral .item{
@@ -303,7 +299,7 @@ h3 {
 
 .item h1 {
    color: #24130d;
-   font-size: 35px;
+   font-size: 30px;
    font-family: 'Poppins', sans-serif;
    letter-spacing: 1px;
 }
@@ -489,7 +485,7 @@ footer {
       margin-top: 20px;
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 80%;
       margin-bottom: 20px;
    }
 
