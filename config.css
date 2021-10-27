@@ -588,9 +588,10 @@ footer .btn {
 .copyright {
    background-color: #24130d;
    border-top: 1px #443232 solid;
-   padding: 8px 100px;
+   padding: 8px 0px;
    text-align: center;
    color: #f3eddacb;
+   width: 100%;
 }
 
 .copyright p {

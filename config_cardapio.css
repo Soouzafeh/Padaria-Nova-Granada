@@ -248,7 +248,7 @@ h3 {
     align-items: center;
     display: flex;
     width: 10vw;
-    min-width: 85px;
+    min-width: 115px;
     border-right: 0.5px solid #f3edda;
     border-left: 0.5px solid #f3edda;
 }
@@ -261,6 +261,7 @@ h3 {
     color: #f3edda;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 /*conteúdo central*/

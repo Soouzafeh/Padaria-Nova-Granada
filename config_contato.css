@@ -475,11 +475,12 @@ footer {
  }
  
  .copyright {
-    background-color: #24130d;
-    border-top: 1px #443232 solid;
-    padding: 8px 100px;
-    text-align: center;
-    color: #f3eddacb;
+   background-color: #24130d;
+   border-top: 1px #443232 solid;
+   padding: 8px 0px;
+   text-align: center;
+   color: #f3eddacb;
+   width: 100%;
  }
  
  .copyright p {
@@ -514,7 +515,7 @@ footer {
       display: none;
    }   
 
-   .search-txt, .op, .op1 {
+   .search-txt, .op, .op6 {
       font-size: 1.6vw;
    }
  
@@ -522,11 +523,11 @@ footer {
       margin-right: 32.5vw;
    }
  
-   .op, .op1 {
+   .op, .op6 {
       padding: 4.5px;
    }
  
-   .op:after, .op1:after {
+   .op:after, .op6:after {
       bottom: 2px;
    }
  
@@ -654,7 +655,7 @@ footer {
         z-index:1;
      }
    
-     .op, .op1 {
+     .op, .op6 {
         display: block;
         font-size: 20px;
         margin-top: 4.716981132075472vh;
@@ -662,7 +663,7 @@ footer {
         justify-content: center;
      }
    
-     .op1 {
+     .op6 {
         background-color: rgb(201, 161, 110);
      }
    
@@ -670,11 +671,11 @@ footer {
         left: 0;
      }
    
-     .op:after, .op1:after {
+     .op:after, .op6:after {
         height: 0px;
      }
    
-     .op:hover, .op1:hover {
+     .op:hover, .op6:hover {
         background-color: rgb(201, 161, 110);
      }
  }
