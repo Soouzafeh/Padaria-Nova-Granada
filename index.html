@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Home</title>
+        <title>Padaria Nova Granda | Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/src/img/icoon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="src/img/icoon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="config.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="application/javascript"></script>
     </head>
     <body>
         <div class="first">
-            <div class="header">
+            <div class="header" id="header">
                 <input type="checkbox" id="check">
 		        <label for="check" class="checkbtn">
 			        <i class="fas fa-bars"></i>
@@ -26,7 +27,7 @@
                         <img src="src/img/logo-branca.png" alt="Logo">
                     </a>
                 </div>
-                <div class="menu">
+                <div class="menu" id="menu">
                     <a class="op1" href="#">Início</a>
                     <a class="op" href="sobre.html">Sobre nós</a>
                     <a class="op" href="galeria.html">Galeria</a>
@@ -34,11 +35,20 @@
                     <a class="op" href="cardapio.html">Cardápio</a>
                     <a class="op" href="contato.html">Contato</a>
                 </div>
-                <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Pesquisar"> <!--Onde escreve na pesquisa-->
-                    <a href="#" class="search-button">
-                        <img src="/src/img/loupe-icon.svg" alt="Lupa de Pesquisa">
-                    </a>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" class="search-txt" placeholder="Pesquisar"> <!--Onde escreve na pesquisa-->
+                        <a href="#" class="search-button">
+                            <img src="src/img/loupe-icon.svg" alt="Lupa de Pesquisa">
+                        </a>
+                    </div>   
+
+                    <!--caixa de sugestões-->
+                    <!--<div class="search-suges" id="search-suges">-->
+                        <!--<div class="search-item" id="search-item">-->
+                            <!--<p>Teste</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
             <div class="container">
@@ -47,20 +57,20 @@
                 <h1>A vida só começa depois do café da manhã.</h1>
             </div>
             <div class="breakfast">
-                <img src="/src/img/cir.png" alt="Café da manhnã">
+                <img src="src/img/cir.png" alt="Café da manhnã">
             </div>
             <div class="social">
                 <a target="blank" href="https://www.facebook.com/panificadoranovagranada">
-                    <img src="/src/img/facebook-icon.png" alt="Ícone do Facebook">
+                    <img src="src/img/facebook-icon.png" alt="Ícone do Facebook">
                 </a>
                 <a target="blank" href="https://www.instagram.com/padarianovagranada/?fbclid=IwAR00hl0MfjiXH_jFsuf3khUku32fsdO3-p67cP4iOhY2aptUXp5OdUpGths">
-                    <img src="/src/img/instagram-icon.png" alt="Ícone do instagram">
+                    <img src="src/img/instagram-icon.png" alt="Ícone do instagram">
                 </a>
                 <a target="blank" href="https://api.whatsapp.com/send?phone=5511938061207&fbclid=IwAR1wUSbb_Qmjf-6l_tXvWzQ4-_MrSQDm6VObN9IKDzEBcx1Yt7as9bVZwMI">
-                    <img src="/src/img/whatsapp-icon.png" alt="Ícone do WhatsApp">
+                    <img src="src/img/whatsapp-icon.png" alt="Ícone do WhatsApp">
                 </a>
                 <a target="blank" href="mailto:ngranada@uol.com.br">
-                    <img src="/src/img/email-icon.png" alt="Ícone do Email">
+                    <img src="src/img/email-icon.png" alt="Ícone do Email">
                 </a>
             </div>
                 </div>
@@ -73,7 +83,7 @@
                     <h2>Desde 1973</h2>
                 </div>
                 <div class="dir_peq_sobre">
-                    <p>Somos uma grande família que trabalhamos para servir a sua família. Nossa história começou em 1980 por um de nossos sócios, o qual o seu sonho era montar uma “Confeitaria” reunindo vontade e dedicação não perdemos tempo e fomos atrás deste sonho, com muita dedicação e entusiasmo. As receitas são bem aceitas pelo povo Suzanense, pois são elaboradas com matéria – prima de primeira qualidade e uma “pitada de muito amor pelo que fazemos”. </p>
+                    <p>Somos uma pequena empresa fundada em 1973 e adquirida em 1992 pelos então atuais responsáveis pela tradição constante. Já tendo passado por mais de uma reforma, prezamos sempre pela experiência inesquecível vivenciada pelos clientes, buscando um bom atendimento e trabalhando sempre com produtos de qualidade, marca registrada da padaria. Tendo destaque em nossos fresquinhos e saborosos produtos, que passam por um rigoroso controle de qualidade.</p>
                     <a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a>
                 </div>
             </div>
@@ -83,7 +93,7 @@
                         <div class="texto_topico1">
                             <h3>Confeitaria</h3>
                             <p>Possuímos uma confeitaria de excelente qualidade com ampla diversificação de produtos. Todos nossos bolos e doces são feitos com extrema dedicação e seguindo receitas tradicionais.</p>
-                            <a href="#"><button type="button" class="btn">SAIBA MAIS</button></a>
+                            <a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a>
                         </div>
                         <div class="imagem_topico">
                             <img src="src/img/confeitaria.jpg" alt="Confeitaria">
@@ -96,14 +106,14 @@
                         <div class="texto_topico2">
                             <h3>Restaurante</h3>
                             <p>Com grande variedade, possuímos buffet e pratos feitos disponíveis. Há diversas opções de saladas, pratos quentes e frios, massas, carnes, frangos, peixes, legumes e grãos. Venha conhecer essas delícias.</p>
-                            <a href="#"><button type="button" class="btn">SAIBA MAIS</button></a>
+                            <a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a>
                         </div>
                     </div>
                     <div class="topico3">
                         <div class="texto_topico1">
                             <h3>Panificação</h3>
                             <p>Prezando pela tradição, buscamos sempre trazer panificados saborosos e fresquinhos. Mantendo o excelente padrão de qualidade, sempre há uma opção para o seu dia.</p>
-                            <a href="#"><button type="button" class="btn">SAIBA MAIS</button></a>
+                            <a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a>
                         </div>
                         <div class="imagem_topico3">
                             <img src="src/img/panificacao.jpg" alt="Panificação">
@@ -117,31 +127,31 @@
                     <div class="itens_novidade">
                         <a href="novidade.html">
                             <div class="item_novidade1">
-                                <img src="/src/img/bf.jpg" alt="Beijo de freira">
+                                <img src="src/img/bf.jpg" alt="Beijo de freira">
                                 <div class="texto_item1">Beijo de freira</div>
                              </div>
                         </a>
                         <a href="novidade.html">
                             <div class="item_novidade2">
-                                <img src="/src/img/bp.jpg" alt="Biscoito português">
+                                <img src="src/img/bp.jpg" alt="Biscoito português">
                                 <div class="texto_item2">Biscoito português</div>
                             </div>
                         </a>
                         <a href="novidade.html">
                             <div class="item_novidade3">
-                                <img src="/src/img/.jpg" alt="Biscoito de coco">
+                                <img src="src/img/bc.jpg" alt="Biscoito de coco">
                                 <div class="texto_item3">Biscoito de coco</div>
                             </div>
                         </a>
                         <a href="novidade.html">
                             <div class="item_novidade4">
-                                <img src="" alt="Biscoito de natas">
+                                <img src="src/img/bn.jpg" alt="Biscoito de natas">
                                 <div class="texto_item4">Biscoito de natas</div>
                             </div>
                         </a>
                         <a href="novidade.html">
                             <div class="item_novidade5">
-                                <img src="" alt="Rosquinha de flocos">
+                                <img src="src/img/rf.jpg" alt="Rosquinha de flocos">
                                 <div class="texto_item5">Rosquinha de flocos</div>
                             </div>
                         </a>
@@ -155,7 +165,7 @@
             <div class="container_footer">
                 <div class="sn_footer">
                     <h4>Sobre Nós</h4>
-                    <p>Somos uma grande família que trabalhamos para servir a sua família. Nossa história começou em 1980 por um de nossos sócios, o qual o seu sonho era montar uma “Confeitaria”.<br><a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a></p>
+                    <p>Somos uma pequena empresa fundada em 1973 e adquirida em 1992 pelos então atuais responsáveis pela tradição constante. Tendo destaque em nossos fresquinhos e saborosos produtos, que passam por um rigoroso controle de qualidade.<br><a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a></p>
                     <ul class="redes">
                         <li><a href="https://www.facebook.com/panificadoranovagranada"><i class="fab fa-facebook"></i></a></li>
                         <li><a href="https://www.instagram.com/padarianovagranada/"><i class="fab fa-instagram"></i></a></li>
@@ -187,4 +197,6 @@
             <p>Copyright © 2021 - Todos os direitos reservados</p>
         </div>
     </body>
+    <script src="src/js/search.js"></script>
+    <script src="src/js/menu.js"></script>
 </html>

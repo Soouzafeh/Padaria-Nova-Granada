@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Contato</title>
+    <title>Padaria Nova Granada | Contato</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/src/img/icoon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/icoon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="config_contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="application/javascript"></script>
 </head>
 </head>
 <body>
@@ -27,7 +28,7 @@
                 <img src="src/img/logo-branca.png" alt="Logo">
             </a>
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a class="op" href="index.html">Início</a>
             <a class="op" href="sobre.html">Sobre nós</a>
             <a class="op" href="galeria.html">Galeria</a>
@@ -35,11 +36,20 @@
             <a class="op" href="cardapio.html">Cardápio</a>
             <a class="op6" href="contato.html">Contato</a>
         </div>
-        <div class="search-box">
-            <input type="text" class="search-txt" placeholder="Pesquisar"> <!--Onde escreve na pesquisa-->
-            <a href="#" class="search-button">
-                <img src="/src/img/loupe-icon.svg" alt="Lupa de Pesquisa">
-            </a>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Pesquisar"> <!--Onde escreve na pesquisa-->
+                <a href="#" class="search-button">
+                    <img src="src/img/loupe-icon.svg" alt="Lupa de Pesquisa">
+                </a>
+            </div>   
+
+            <!--caixa de sugestões-->
+            <!--<div class="search-suges" id="search-suges">-->
+                <!--<div class="search-item" id="search-item">-->
+                    <!--<p>Teste</p>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="title">
@@ -89,7 +99,7 @@
         <div class="container_footer">
             <div class="sn_footer">
                 <h4>Sobre Nós</h4>
-                <p>Somos uma grande família que trabalhamos para servir a sua família. Nossa história começou em 1980 por um de nossos sócios, o qual o seu sonho era montar uma “Confeitaria”.<br><a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a></p>
+                <p>Somos uma pequena empresa fundada em 1973 e adquirida em 1992 pelos então atuais responsáveis pela tradição constante. Tendo destaque em nossos fresquinhos e saborosos produtos, que passam por um rigoroso controle de qualidade.<br><a href="sobre.html"><button type="button" class="btn">SAIBA MAIS</button></a></p>
                 <ul class="redes">
                     <li><a href="https://www.facebook.com/panificadoranovagranada"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/padarianovagranada/"><i class="fab fa-instagram"></i></a></li>
@@ -120,20 +130,8 @@
     <div class="copyright">
         Copyright © 2021 - Todos os direitos reservados
     </div>
-
-    <script>
-        function afastar() {
-            document.getElementById('nome').style.marginTop = '20px'
-            document.getElementById('nome').style.borderBottomColor = '#f3edda'
-        }
-        function afastar1() {
-            document.getElementById('email').style.marginTop = '20px'
-            document.getElementById('email').style.borderBottomColor = '#f3edda'
-        }
-        function afastar2() {
-            document.getElementById('mensagem').style.marginTop = '20px'
-            document.getElementById('mensagem').style.borderBottomColor = '#f3edda'
-        }
-    </script>
+    <script src="src/js/abrir.js"></script>
+    <script src="src/js/search.js"></script>
+    <script src="src/js/menu.js"></script>
 </body>
 </html>

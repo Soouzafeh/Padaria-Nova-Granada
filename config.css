@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-   flex: 25%;
+   margin: 0;
 }
 
 .logo img {
@@ -62,9 +62,9 @@ body {
 }
 
 .menu {
-   flex: 75%;
+   margin-left: 20px;
    text-align: right;
-   margin-right: 33vw;
+   margin-right: auto;
    margin-top:  4.758418740849195vw;
 }
 
@@ -103,8 +103,8 @@ body {
 }
 
 .search-box {
-   position: absolute; /*Posso colocar o obj. onde quiser*/
-   right:  0.5856515373352855vw;
+   position: relative; 
+   right:  0vw;
    margin-top: 2.562225475841874vw;
    background-color: #4d322a;
    height: 4.392386530014641vw;
@@ -146,6 +146,23 @@ body {
 ::-webkit-input-placeholder {
    color: rgba(253,252,252,255);
    font-family: 'Berkshire Swash', cursive;
+}
+
+/*Sugestões da Barra de pesquisa*/
+
+.search-suges {
+   display: flex;
+   flex-direction: column;
+   background-color: aquamarine;
+   position: absolute;
+   padding: 5px;
+   right: 12px;
+   left: calc(74% - -4px);
+}
+
+.search-container {
+   margin-left: 0px;
+   margin-right: 8px;
 }
 
 /*parte inicial após header*/
@@ -324,6 +341,7 @@ h3{
 .imagem_topico img, .imagem_topico3 img {
    width: 100%;
    height: 100%;
+   border-radius: 3px;
 }
 
 .topico2 {
@@ -374,7 +392,6 @@ h3{
 
 .item_novidade1, .item_novidade2, .item_novidade3, .item_novidade4, .item_novidade5 {
    width: 20vw;
-   background-color: cornflowerblue;
    height: 10vw;
    margin-bottom: 40px;
    position: relative;
@@ -601,12 +618,12 @@ footer .btn {
 
 @media only screen and (max-width:900px){
 
+   .menu {
+      margin-left: 12px;
+   }
+
   .search-txt, .op, .op1 {
      font-size: 1.6vw;
-  }
-
-  .menu {
-     margin-right: 32.5vw;
   }
 
   .op, .op1 {
@@ -727,7 +744,6 @@ footer .btn {
    }
 
    body {
-      height: 100vh;
       display: flex;
       flex-direction: column;
       background-color: #f3edda;
@@ -737,7 +753,7 @@ footer .btn {
       flex-direction: row;
       display: flex;
       height: max-content;
-      padding-top: 15px;
+      padding-top: 2.2vw;
       width: 100%;
       background-color: #4d322a;
       position: fixed;
@@ -746,22 +762,36 @@ footer .btn {
 
    .checkbtn {
       display: block;
-      flex: 0%;
-      margin-top: 6vw;
+      flex: 1;
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
    }
 
    .fas.fa-bars {
       float: left;
-      margin-left: 20px;
+      margin-left: 4vw;
+      font-size: 5.5vw;
+   }
+
+   .search-container{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
    }
 
    .logo {
-      flex: 43%;
+      flex: 1;
    }
    
    .logo img {
       width: 40vw;
-      padding-bottom: 20px;
+      padding-bottom: 2.5vw;
    }
  
   .container {
@@ -838,11 +868,12 @@ footer .btn {
 }
 
 .search-box {
-   right:  0.8784773060029283vw;
-   margin-top: 5vw;
+   right: -8vw;
+   margin: 0;
    height: 6.588579795021962vw;
-   padding: 1.0980966325036603vw;
+   padding: 1.0980966325036603vw;;
    border-radius: 4.392386530014641vw;
+   background-color: #00000017;
 }
 
 .search-txt {
@@ -856,7 +887,7 @@ footer .btn {
    width: 6.588579795021962vw;
    height: 6.588579795021962vw;
    border-radius: 50%;
-   
+   background-color: transparent;
 }
 
 .search-box:hover > .search-txt {
@@ -864,25 +895,29 @@ footer .btn {
    padding: 0;
 }
 
-
-  .menu {
-     position: fixed;
-     width: 100%;
-     height: 90%;
-     background: rgb(222, 184, 135);
-     top: 30vw;
-     left: -100%;
-     text-align: center;
-     transition: all .5s;
-     z-index:1;
-  }
+.menu {
+   position: fixed;
+   width: 100%;
+   height: calc(100vh - 25vw);
+   background: rgb(222, 184, 135);
+   left: -100%;
+   margin: 0;
+   text-align: center;
+   transition: all .5s;
+   z-index:1;
+   overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+}
 
   .op, .op1 {
-     display: block;
-     font-size: 20px;
-     margin-top: 4.716981132075472vh;
-     padding-bottom: 3.930817610062893vh;
+     display: flex;
      justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     flex: 1;
+     width: 100%;
   }
 
   .op1 {
