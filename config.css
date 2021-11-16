@@ -151,13 +151,46 @@ body {
 /*Sugestões da Barra de pesquisa*/
 
 .search-suges {
-   display: flex;
+   display: none;
    flex-direction: column;
-   background-color: aquamarine;
    position: absolute;
    padding: 5px;
    right: 12px;
    left: calc(74% - -4px);
+   z-index: 20;
+   border-radius: 8px;
+   background-color: #c9ac91;
+   margin-top: 10px;
+}
+
+.search-item {
+   display: flex;
+   margin: 0;
+}
+
+.search-item:hover {
+   background-color: #c0a186;
+}
+
+.search-item img, .search-container p, .search-container a {
+   margin: 0;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 17px;
+   color: white;
+}
+
+.search-item p {
+   margin-left: 1.5vw;
+}
+
+.search-item div.info {
+   display: flex;
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   border-bottom: solid 2px #b39981;
+   width: 100%;
 }
 
 .search-container {
@@ -206,7 +239,8 @@ body {
    align-items: center;
    justify-content: center;
    float: right;
-   display: block;
+   display: flex;
+   flex-direction: column;
    position: absolute;
    right: 0vw;
    
@@ -618,6 +652,10 @@ footer .btn {
 
 @media only screen and (max-width:900px){
 
+   .search-item img, .search-container p, .search-container a {
+      font-size: 12px;
+   }
+
    .menu {
       margin-left: 12px;
    }
@@ -739,6 +777,7 @@ footer .btn {
 /*Configuração para celular e tablets menores*/
 
 @media only screen and (max-width:650px) {
+
    .topico2 h3 {
       padding-top: 2vw;
    }
@@ -762,7 +801,7 @@ footer .btn {
 
    .checkbtn {
       display: block;
-      flex: 1;
+      flex: 25%;
       margin-top: 0;
       display: flex;
       justify-content: center;
@@ -786,7 +825,7 @@ footer .btn {
    }
 
    .logo {
-      flex: 1;
+      flex: 66.66%;
    }
    
    .logo img {
@@ -867,11 +906,15 @@ footer .btn {
    height: 4.392386530014641vw;
 }
 
+.search-container {
+   display: none;
+}
+
 .search-box {
    right: -8vw;
    margin: 0;
    height: 6.588579795021962vw;
-   padding: 1.0980966325036603vw;;
+   padding: 1.0980966325036603vw;
    border-radius: 4.392386530014641vw;
    background-color: #00000017;
 }
