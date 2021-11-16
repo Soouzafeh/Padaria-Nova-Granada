@@ -19,7 +19,72 @@ const allProducts = [
         link: "/encomendas.html"
     },
     {
-        name: "Produto B",
+        name: "Bolo Russo",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Bolo de Nozes",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Bolo Mil Folhas",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Bolo Floresta Negra",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Bolo Prestígio",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Bolo Ninho",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Tacinhas",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Docinhos",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Salgadinho",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Salgados Assados",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Pacote Festa Nº 1",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Pacote Festa Nº 2",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Pacote Happy Hour",
+        img: "",
+        link: "/encomendas.html"
+    },
+    {
+        name: "Lanche de Metro",
         img: "",
         link: "/encomendas.html"
     },
