@@ -865,6 +865,10 @@ footer {
         flex: 1;
         width: 100%;
      }
+
+     .op4 {
+        background-color: rgb(201, 161, 110);
+     }
    
      #check:checked ~ .menu {
         left: 0;
